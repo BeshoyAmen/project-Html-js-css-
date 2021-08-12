@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
+
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/style_footerAndheader.css"> 
+    <link rel="stylesheet" href="css/footerStyle.css"> 
+    <link rel="stylesheet" href="css/main.css">  -->
+
+    <title>Store data</title>
+</head>
+<body>
+    <!-- strat section navbar admin  -->
+    <section>
+
+    <div class="container-fluid">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId">
+            <li class="nav-item">
+                <a href="#tab1Id" class="nav-link active">Name_Website</a>
+            </li>
+         
+            <li class="nav-item">
+                <a href="#" class="nav-link ">home</a>
+            </li>
+            <li class="nav-item">
+                <a href="Index_Page2.html" class="nav-link">page trip</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">Action</a>
+                    <a class="dropdown-item" href="#tab3Id">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#tab4Id">Action</a>
+                </div>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+    </div>
+</section>
+    <!-- end section navbar admin  -->
+
+<!-- start section insert data  -->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="container mt-5">
+                    <p class="text-center fw">insert new Journey</p>
+                    <hr>
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" >Name Journey</span>
+                            </div>
+                            <input type="text" class="form-control" id="id" aria-describedby="basic-addon3" placeholder="enter id">
+                            <input type="text" class="form-control" id="name" aria-describedby="basic-addon3" placeholder="enter name">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" >continent</span>
+                            </div>
+                            <select class="form-control form-control-sm p-3 "  id="continent">
+                                <option >choose item</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Africa">Africa</option>
+                                <option value="Europe">Europe</option>
+                                <option value="North_American">North_American</option>
+                                <option value="South_America">South_America</option>
+                              </select>
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" >price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                            </div>
+                            <input type="text" class="form-control" id="price" aria-describedby="basic-addon3">
+                          </div>
+
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" >count day &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                            </div>
+                            <input type="text" class="form-control" id="day" aria-describedby="basic-addon3">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" >location &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                            </div>
+                            <input type="text" class="form-control" id="from" aria-describedby="basic-addon3" placeholder="from">
+                            <input type="text" class="form-control" id="to" aria-describedby="basic-addon3" placeholder="to">
+                          </div>
+
+
+                          <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="file_Img" >
+                          </div>
+                          
+
+                          <button type="button" id="insert" class="btn btn-primary">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <div class="container">
+                    <div class="col-12 ">
+                        <div class="card rtl">
+                            <img class="card-img-top" src="images/photo/003.jpg" height="200px" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Last Add <i class="fa fa-book" aria-hidden="true"></i></h4>
+                            </div>
+                            <ul class="list-group list-group-flush " id="listt">
+                              
+                            </ul>
+                        </div>
+                    </div>    
+
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+<!-- end section insert data  -->
+
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <!--Firebase Libraries-->
+    <!-- // -- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script> 
+<script src="Scripts/fire.js"></script>
+<script src="Scripts/fire2.js"></script>
+    <script src="Scripts/main.js"></script>
+
+
+    //   -----------------------------------------------------------------
+
+
+    <script>
+let idv,namev,pricev,continentVZ,src_imgv,filename,dayv,fromv,tov;
+    function ready()
+    {
+        idv=document.getElementById('id').value;
+        namev=document.getElementById('name').value;
+        pricev=document.getElementById('price').value;
+        dayv=document.getElementById('day').value;
+        continentVZ=document.getElementById('continent').value;
+        fromv=document.getElementById('from').value;
+        tov=document.getElementById('to').value;
+        src_imgv=document.getElementById('file_Img').value;
+         filename = src_imgv.split('\\').pop().split('/').pop();
+        console.log(filename);
+    }
+    // ------------------------------------process insert---------------------- 
+    document.getElementById('insert').onclick=()=>{
+        
+        ready();
+        // console.log(namev,pricev,continentV,src_imgv,filename);
+        firebase.database().ref('test_table/'+idv).set({
+
+            NameOftest_table:namev,
+            pricev:pricev,
+            section:continentVZ,
+            image:filename,
+            count_day:dayv,
+            from:fromv,
+            to:tov
+
+        });
+    };
+// ---------------------------------------------image--------------------- 
+
+    </script>
+</body>
+</html>
